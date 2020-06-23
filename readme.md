@@ -36,3 +36,18 @@ in server.js:
 - create get route
 - send test response 
 - send back an array
+
+Phase 4 - module
+===
+
+- create "modules" folder in "server"
+- create "testModule.js" in "modules"
+
+in testModule.js:
+
+- globals & functionality (js logic)
+- module.exports
+
+in server.js:
+
+- require module

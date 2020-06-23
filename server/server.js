@@ -1,12 +1,9 @@
 // requires
 const express = require( 'express' );
+const testModule = require( './modules/testModule' );
 const app = express();
 // globals
 const port = 5000;
-let inventory = [
-    { name: 'drop of blood', size: 'tiny', color: 'red' },
-    { name: 'cup of blood', size: 'small', color: 'red' }
-]
 // spin up server
 app.listen( port, ()=>{
     // arrow functions are used on server
@@ -14,6 +11,6 @@ app.listen( port, ()=>{
 }) // end server up
 // routes
 app.get( '/', ( req, res )=>{
-    console.log( 'in / GET' );
-    res.send( inventory );
+    console.log( 'in / GET:', testModule );
+    res.send( testModule );
 }) // end / GET
