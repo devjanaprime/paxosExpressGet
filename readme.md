@@ -27,3 +27,12 @@ in server.js:
 - spin up server on port 5000
 - hold port in const
 - create "start" script in package.json
+
+Phase 3 - Create first route
+===
+
+in server.js:
+
+- create get route
+- send test response 
+- send back an array
